@@ -878,50 +878,6 @@
       </button>
     </div>
 
-    <!-- ==================== GIG RSVP / TICKET MODAL ==================== -->
-    <div
-      id="rsvp-modal"
-      class="hidden fixed inset-0 z-50 bg-rock-deep/90 backdrop-blur-sm flex items-center justify-center p-4"
-    >
-      <div
-        class="max-w-md w-full bg-rock-card border border-rock-text/20 rounded-2xl p-6 shadow-2xl"
-      >
-        <div class="flex items-center justify-between mb-4">
-          <span class="text-xs font-bold uppercase tracking-widest text-rock-amber"
-            >Show RSVP & Tickets</span
-          >
-          <button onclick="closeRsvpModal()" class="text-rock-muted hover:text-rock-text">
-            <i class="fa-solid fa-xmark text-lg"></i>
-          </button>
-        </div>
-        <h3 id="rsvp-show-title" class="text-xl font-bold text-rock-text mb-2"></h3>
-        <p class="text-sm text-rock-muted mb-5">
-          Drop your email to reserve guestlist spots or receive the direct box-office link.
-        </p>
-        <form id="rsvp-form" class="space-y-4">
-          <input
-            type="email"
-            id="rsvp-email"
-            required
-            placeholder="you@example.com"
-            class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text placeholder-rock-muted/60 text-sm"
-          />
-          <button
-            type="submit"
-            class="w-full py-3 rounded-xl bg-rock-red hover:bg-rock-crimson text-white font-bold uppercase tracking-wider text-sm shadow-neon-red"
-          >
-            Confirm RSVP
-          </button>
-        </form>
-        <div
-          id="rsvp-success"
-          class="hidden mt-4 p-3 rounded-xl bg-emerald-950/70 border border-emerald-400/40 text-emerald-200 text-sm text-center"
-        >
-          You're on the list! Check your inbox for show details.
-        </div>
-      </div>
-    </div>
-
     <!-- ==================== VANILLA JAVASCRIPT ==================== -->
     <script>
       // -------------------- 1. MOBILE NAVIGATION TOGGLE --------------------
@@ -1004,38 +960,20 @@
       });
 
       // -------------------- 4. INTERACTIVE SETLIST FILTERING --------------------
-      const setlistData = [
-        {
-          title: "Paranoid",
-          artist: "Black Sabbath",
-          era: "70s-80s",
-          eraLabel: "70s/80s Classic",
-          favorite: true,
-        },
+      let setlistData = [];
 
-        {
-          title: "Black Hole Sun",
-          artist: "Soundgarden",
-          era: "90s",
-          eraLabel: "90s Grunge & Alt",
-          favorite: false,
-        },
+      async function loadSetlist() {
+        try {
+          const response = await fetch("setlist.json");
+          setlistData = await response.json();
+          renderSetlist(setlistData); // Render once data is loaded
+        } catch (error) {
+          console.error("Could not load setlist:", error);
+        }
+      }
 
-        {
-          title: "Seven Nation Army",
-          artist: "The White Stripes",
-          era: "2000s",
-          eraLabel: "2000s+ Anthems",
-          favorite: false,
-        },
-        {
-          title: "Sex on Fire",
-          artist: "Kings of Leon",
-          era: "2000s",
-          eraLabel: "2000s+ Anthems",
-          favorite: false,
-        },
-      ];
+      // Call this when the page loads
+      document.addEventListener("DOMContentLoaded", loadSetlist);
 
       let selectedEra = "all";
       let searchQuery = "";
