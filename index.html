@@ -1,153 +1,262 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POLARITY | Portsmouth Rock Covers Band</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Anton (Edgy Display) & Inter (Clean UI) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sarpanch&family=Orbitron:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarpanch&family=Orbitron:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        display: ['Sarpanch', 'sans-serif'],
-                        sans: ['Orbitron', 'sans-serif'],
-                    },
-                    colors: {
-                        rock: {
-                            dark: '#454162',      /* Primary Background (--bg-primary) */
-                            deep: '#393552',      /* Recessed / Alternate Section Surface */
-                            card: '#4f4b6f',      /* Elevated Card / Modal Surface */
-                            input: '#34304b',     /* Form Input & Recessed Pill Surface */
-                            text: '#e1e0e5',      /* Primary Text (--text-primary) */
-                            muted: '#b9b6c7',     /* Secondary / Muted Text (--text-secondary) */
-                            red: '#ff4d5a',       /* Electric Coral-Crimson Accent */
-                            crimson: '#e03a47',   /* Hover Crimson Accent */
-                            amber: '#f5b041',     /* Warm Gold/Amber Accent */
-                        }
-                    },
-                    boxShadow: {
-                        'neon-red': '0 0 22px rgba(255, 77, 90, 0.45)',
-                        'neon-amber': '0 0 22px rgba(245, 176, 65, 0.35)',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["Sarpanch", "sans-serif"],
+              sans: ["Orbitron", "sans-serif"],
+            },
+            colors: {
+              rock: {
+                dark: "#454162" /* Primary Background (--bg-primary) */,
+                deep: "#393552" /* Recessed / Alternate Section Surface */,
+                card: "#4f4b6f" /* Elevated Card / Modal Surface */,
+                input: "#34304b" /* Form Input & Recessed Pill Surface */,
+                text: "#e1e0e5" /* Primary Text (--text-primary) */,
+                muted: "#b9b6c7" /* Secondary / Muted Text (--text-secondary) */,
+                red: "#ff4d5a" /* Electric Coral-Crimson Accent */,
+                crimson: "#e03a47" /* Hover Crimson Accent */,
+                amber: "#f5b041" /* Warm Gold/Amber Accent */,
+              },
+            },
+            boxShadow: {
+              "neon-red": "0 0 22px rgba(255, 77, 90, 0.45)",
+              "neon-amber": "0 0 22px rgba(245, 176, 65, 0.35)",
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body class="bg-rock-dark text-rock-text font-sans antialiased selection:bg-rock-red selection:text-white overflow-x-hidden">
-
+  </head>
+  <body
+    class="bg-rock-dark text-rock-text font-sans antialiased selection:bg-rock-red selection:text-white overflow-x-hidden"
+  >
     <!-- ==================== NAVIGATION BAR ==================== -->
-    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-rock-dark/90 backdrop-blur-md border-b border-rock-text/15">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <!-- Brand Logo -->
-                <a href="#home" class="flex items-center gap-2.5 group">
-                    <span class="w-15 h-9 rounded-lg bg-gradient-to-br from-rock-amber to-rock-input flex items-center justify-center text-rock-text font-bold text-xl shadow-neon-red group-hover:scale-105 transition-transform">
-                      <span class="inline-flex items-center gap-0">
-                      <i class="fa-solid fa-wifi -rotate-90"></i>
-                      <i class="fa-solid fa-wifi rotate-90"></i>
-                    </span>
-                    </span>
-                    <span class="font-display text-2xl sm:text-3xl tracking-wider uppercase text-rock-text">
-                        POLAR<span class="text-transparent bg-clip-text bg-gradient-to-r from-rock-card to-rock-amber">ITY</span>
-                    </span>
-                </a>
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-rock-dark/90 backdrop-blur-md border-b border-rock-text/15"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Brand Logo -->
+          <a href="#home" class="flex items-center gap-2.5 group">
+            <span
+              class="w-15 h-9 rounded-lg bg-gradient-to-br from-rock-amber to-rock-input flex items-center justify-center text-rock-text font-bold text-xl shadow-neon-red group-hover:scale-105 transition-transform"
+            >
+              <span class="inline-flex items-center gap-0">
+                <i class="fa-solid fa-wifi -rotate-90"></i>
+                <i class="fa-solid fa-wifi rotate-90"></i>
+              </span>
+            </span>
+            <span class="font-display text-2xl sm:text-3xl tracking-wider uppercase text-rock-text">
+              POLAR<span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-rock-card to-rock-amber"
+                >ITY</span
+              >
+            </span>
+          </a>
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center space-x-7">
-                    <a href="#home" class="text-sm font-semibold uppercase tracking-widest text-rock-text/85 hover:text-rock-red transition-colors">Home</a>
-                    <a href="#media" class="text-sm font-semibold uppercase tracking-widest text-rock-text/85 hover:text-rock-red transition-colors">Media</a>
-                    <a href="#setlist" class="text-sm font-semibold uppercase tracking-widest text-rock-text/85 hover:text-rock-red transition-colors">Setlist</a>
-                    <a href="#gigs" class="text-sm font-semibold uppercase tracking-widest text-rock-text/85 hover:text-rock-red transition-colors">Gig Dates</a>
-                    <a href="https://www.facebook.com/polarityband" target="_blank" rel="noopener noreferrer" aria-label="Polarity on Facebook" class="text-rock-text/85 hover:text-rock-amber transition-colors text-lg">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#contact" class="px-5 py-2.5 rounded-lg bg-rock-red hover:bg-rock-crimson text-white text-sm font-bold uppercase tracking-wider shadow-neon-red transition-all transform hover:-translate-y-0.5">
-                        Book Us
-                    </a>
-                </nav>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-lg text-rock-text hover:text-white hover:bg-rock-card focus:outline-none">
-                    <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Dropdown Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden bg-rock-deep border-b border-rock-text/15 px-4 pt-2 pb-6 space-y-2">
-            <a href="#home" class="mobile-link block px-4 py-3 rounded-lg text-base font-bold uppercase tracking-wider text-rock-text hover:bg-rock-card hover:text-rock-red">Home</a>
-            <a href="#media" class="mobile-link block px-4 py-3 rounded-lg text-base font-bold uppercase tracking-wider text-rock-text hover:bg-rock-card hover:text-rock-red">Media</a>
-            <a href="#setlist" class="mobile-link block px-4 py-3 rounded-lg text-base font-bold uppercase tracking-wider text-rock-text hover:bg-rock-card hover:text-rock-red">Setlist</a>
-            <a href="#gigs" class="mobile-link block px-4 py-3 rounded-lg text-base font-bold uppercase tracking-wider text-rock-text hover:bg-rock-card hover:text-rock-red">Gig Dates</a>
-            <a href="https://www.facebook.com/polarityband" target="_blank" rel="noopener noreferrer" class="mobile-link flex items-center gap-2 px-4 py-3 rounded-lg text-base font-bold uppercase tracking-wider text-rock-amber hover:bg-rock-card">
-                <i class="fa-brands fa-facebook"></i> Follow on Facebook
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex items-center space-x-7">
+            <a
+              href="#home"
+              class="text-sm font-semibold uppercase tracking-widest text-rock-text/85 hover:text-rock-red transition-colors"
+              >Home</a
+            >
+            <a
+              href="#media"
+              class="text-sm font-semibold uppercase tracking-widest text-rock-text/85 hover:text-rock-red transition-colors"
+              >Media</a
+            >
+            <a
+              href="#setlist"
+              class="text-sm font-semibold uppercase tracking-widest text-rock-text/85 hover:text-rock-red transition-colors"
+              >Setlist</a
+            >
+            <a
+              href="#gigs"
+              class="text-sm font-semibold uppercase tracking-widest text-rock-text/85 hover:text-rock-red transition-colors"
+              >Gig Dates</a
+            >
+            <a
+              href="https://www.facebook.com/polarityband"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Polarity on Facebook"
+              class="text-rock-text/85 hover:text-rock-amber transition-colors text-lg"
+            >
+              <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="#contact" class="mobile-link block px-4 py-3 mt-2 rounded-lg text-center text-base font-bold uppercase tracking-wider bg-rock-red text-white shadow-neon-red">Book Us Now</a>
+            <a
+              href="#contact"
+              class="px-5 py-2.5 rounded-lg bg-rock-red hover:bg-rock-crimson text-white text-sm font-bold uppercase tracking-wider shadow-neon-red transition-all transform hover:-translate-y-0.5"
+            >
+              Book Us
+            </a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            aria-label="Toggle Menu"
+            class="md:hidden p-2.5 rounded-lg text-rock-text hover:text-white hover:bg-rock-card focus:outline-none"
+          >
+            <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+          </button>
         </div>
+      </div>
+
+      <!-- Mobile Dropdown Navigation -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-rock-deep border-b border-rock-text/15 px-4 pt-2 pb-6 space-y-2"
+      >
+        <a
+          href="#home"
+          class="mobile-link block px-4 py-3 rounded-lg text-base font-bold uppercase tracking-wider text-rock-text hover:bg-rock-card hover:text-rock-red"
+          >Home</a
+        >
+        <a
+          href="#media"
+          class="mobile-link block px-4 py-3 rounded-lg text-base font-bold uppercase tracking-wider text-rock-text hover:bg-rock-card hover:text-rock-red"
+          >Media</a
+        >
+        <a
+          href="#setlist"
+          class="mobile-link block px-4 py-3 rounded-lg text-base font-bold uppercase tracking-wider text-rock-text hover:bg-rock-card hover:text-rock-red"
+          >Setlist</a
+        >
+        <a
+          href="#gigs"
+          class="mobile-link block px-4 py-3 rounded-lg text-base font-bold uppercase tracking-wider text-rock-text hover:bg-rock-card hover:text-rock-red"
+          >Gig Dates</a
+        >
+        <a
+          href="https://www.facebook.com/polarityband"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mobile-link flex items-center gap-2 px-4 py-3 rounded-lg text-base font-bold uppercase tracking-wider text-rock-amber hover:bg-rock-card"
+        >
+          <i class="fa-brands fa-facebook"></i> Follow on Facebook
+        </a>
+        <a
+          href="#contact"
+          class="mobile-link block px-4 py-3 mt-2 rounded-lg text-center text-base font-bold uppercase tracking-wider bg-rock-red text-white shadow-neon-red"
+          >Book Us Now</a
+        >
+      </div>
     </header>
 
     <!-- ==================== HERO SECTION ==================== -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-rock-dark">
-        <!-- High-Energy Live Concert Background Image with Fallback -->
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=2000&q=80"
-                 onerror="this.src='https://placehold.co/1920x1080/454162/e1e0e5?text=POLARITY+LIVE+PORTSMOUTH'"
-                 alt="Polarity Live Stage Performance"
-                 class="w-full h-full object-cover object-center scale-105 opacity-35 mix-blend-luminosity">
-            <!-- Muted Violet-Slate (#454162) & Warm Stage Lighting Overlays -->
-            <div class="absolute inset-0 bg-gradient-to-t from-rock-dark via-rock-dark/80 to-rock-deep/85"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-rock-red/20 via-transparent to-rock-amber/15"></div>
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-rock-dark"
+    >
+      <!-- High-Energy Live Concert Background Image with Fallback -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=2000&q=80"
+          onerror="
+            this.src = 'https://placehold.co/1920x1080/454162/e1e0e5?text=POLARITY+LIVE+PORTSMOUTH'
+          "
+          alt="Polarity Live Stage Performance"
+          class="w-full h-full object-cover object-center scale-105 opacity-35 mix-blend-luminosity"
+        />
+        <!-- Muted Violet-Slate (#454162) & Warm Stage Lighting Overlays -->
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-rock-dark via-rock-dark/80 to-rock-deep/85"
+        ></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-rock-red/20 via-transparent to-rock-amber/15"
+        ></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16">
+        <div
+          class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rock-deep/90 border border-rock-text/20 text-rock-amber text-xs sm:text-sm font-bold uppercase tracking-widest mb-6 shadow-neon-amber"
+        >
+          <span class="w-2 h-2 rounded-full bg-rock-red animate-ping"></span>
+          Portsmouth, UK • 100% Live Rock Covers • Zero Backing Tracks
         </div>
 
-        <!-- Hero Content -->
-        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rock-deep/90 border border-rock-text/20 text-rock-amber text-xs sm:text-sm font-bold uppercase tracking-widest mb-6 shadow-neon-amber">
-                <span class="w-2 h-2 rounded-full bg-rock-red animate-ping"></span>
-                Portsmouth, UK • 100% Live Rock Covers • Zero Backing Tracks
-            </div>
+        <h1
+          class="font-display text-6xl sm:text-8xl md:text-9xl uppercase tracking-tight text-rock-text leading-none mb-6 drop-shadow-2xl"
+        >
+          <span class="inline-flex items-center gap-0">
+            <i class="fa-solid fa-wifi -rotate-90"></i>
+            POLARITY <br class="sm:hidden" />
+            <i class="fa-solid fa-wifi rotate-90"></i>
+          </span>
+        </h1>
 
-            <h1 class="font-display text-6xl sm:text-8xl md:text-9xl uppercase tracking-tight text-rock-text leading-none mb-6 drop-shadow-2xl">
-              <span class="inline-flex items-center gap-0">
-                <i class="fa-solid fa-wifi -rotate-90"></i>
-                   POLARITY <br class="sm:hidden">
-                <i class="fa-solid fa-wifi rotate-90"></i>
-              </span>
-            </h1>
+        <p
+          class="max-w-2xl mx-auto text-lg sm:text-xl text-rock-text/90 font-normal leading-relaxed mb-10"
+        >
+          Portsmouth’s premier live rock covers band—bringing stadium-sized energy to South Coast
+          clubs, festivals, and private events. From 70s classic riffs to 90s grunge and modern rock
+          titans.
+        </p>
 
-            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-rock-text/90 font-normal leading-relaxed mb-10">
-                Portsmouth’s premier live rock covers band—bringing stadium-sized energy to South Coast clubs, festivals, and private events. From 70s classic riffs to 90s grunge and modern rock titans.
-            </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="#contact"
+            class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-rock-red to-rock-crimson hover:from-rose-500 hover:to-rock-red text-white font-bold uppercase tracking-wider text-base shadow-neon-red transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3"
+          >
+            <i class="fa-solid fa-bolt"></i> Book Polarity
+          </a>
+          <a
+            href="#media"
+            class="w-full sm:w-auto px-8 py-4 rounded-xl bg-rock-card/90 hover:bg-rock-card border border-rock-text/25 hover:border-rock-amber text-rock-text font-bold uppercase tracking-wider text-base transition-all flex items-center justify-center gap-3"
+          >
+            <i class="fa-solid fa-play text-rock-amber"></i> Watch Live Reel
+          </a>
+          <a
+            href="https://www.facebook.com/polarityband"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto px-8 py-4 rounded-xl bg-rock-card/90 hover:bg-rock-card border border-rock-text/20 hover:border-rock-text/40 text-rock-text font-bold uppercase tracking-wider text-base transition-all flex items-center justify-center gap-2.5"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@polaritybanduk"
+            aria-label="YouTube"
+            class="w-full sm:w-auto px-8 py-4 rounded-xl bg-rock-card border border-rock-text/25 hover:border-rock-red hover:text-rock-red flex items-center justify-center text-lg transition-all"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/polaritybandUK"
+            aria-label="Instagram"
+            class="w-full sm:w-auto px-8 py-4 rounded-xl bg-rock-card border border-rock-text/25 hover:border-rock-red hover:text-rock-red flex items-center justify-center text-lg transition-all"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
 
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-rock-red to-rock-crimson hover:from-rose-500 hover:to-rock-red text-white font-bold uppercase tracking-wider text-base shadow-neon-red transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3">
-                    <i class="fa-solid fa-bolt"></i> Book Polarity
-                </a>
-                <a href="#media" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-rock-card/90 hover:bg-rock-card border border-rock-text/25 hover:border-rock-amber text-rock-text font-bold uppercase tracking-wider text-base transition-all flex items-center justify-center gap-3">
-                    <i class="fa-solid fa-play text-rock-amber"></i> Watch Live Reel
-                </a>
-                <a href="https://www.facebook.com/polarityband" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-rock-card/90 hover:bg-rock-card border border-rock-text/20 hover:border-rock-text/40 text-rock-text font-bold uppercase tracking-wider text-base transition-all flex items-center justify-center gap-2.5">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.youtube.com/@polaritybanduk" aria-label="YouTube" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-rock-card border border-rock-text/25 hover:border-rock-red hover:text-rock-red flex items-center justify-center text-lg transition-all">
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="https://www.instagram.com/polaritybandUK" aria-label="Instagram" class="w-full sm:w-auto px-8 py-4  rounded-xl bg-rock-card border border-rock-text/25 hover:border-rock-red hover:text-rock-red flex items-center justify-center text-lg transition-all">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-
-
-            <!-- Quick Band Stats
+        <!-- Quick Band Stats
             <div class="grid grid-cols-3 gap-4 max-w-xl mx-auto mt-16 pt-8 border-t border-rock-text/15">
                 <div>
                     <div class="font-display text-3xl sm:text-4xl text-rock-text">50+</div>
@@ -160,207 +269,329 @@
                 <div>
                     <div class="font-display text-3xl sm:text-4xl text-rock-amber">11/10</div>
                     <div class="text-xs uppercase tracking-wider text-rock-muted mt-1">Stage Volume</div>
-                </div>-->
-            </div>
-        </div>
+                </div>
+            </div>-->
+      </div>
     </section>
 
     <!-- ==================== MEDIA GALLERY SECTION ==================== -->
     <section id="media" class="py-24 bg-rock-deep border-t border-rock-text/15">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Header -->
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-                <div>
-                    <span class="text-rock-red font-bold uppercase tracking-widest text-sm">Sight & Sound</span>
-                    <h2 class="font-display text-4xl sm:text-6xl uppercase tracking-wide text-rock-text mt-1">Live Media Showcase</h2>
-                </div>
-                <p class="text-rock-muted max-w-md text-sm sm:text-base">
-
-                </p>
-            </div>
-
-            <!-- Responsive 16:9 YouTube Video Showcase -->
-            <div class="bg-rock-card border border-rock-text/15 rounded-2xl p-4 sm:p-6 mb-16 shadow-2xl">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 px-1">
-                    <div>
-                        <span class="text-xs font-bold uppercase tracking-widest text-rock-amber">Featured Live Performance</span>
-                        <h3 class="text-lg sm:text-xl font-bold text-rock-text">Polarity — Live — Bartender and the Thief </h3>
-                    </div>
-                    <a href="https://www.youtube.com/@polaritybanduk" target="_blank" rel="noopener noreferrer" class="text-xs font-bold uppercase tracking-wider text-rock-amber hover:underline flex items-center gap-1.5">
-                        <i class="fa-brands fa-youtube"></i> More Videos on Youtube
-                    </a>
-                </div>
-
-                <!-- 16:9 Aspect Ratio YouTube Embed Container -->
-                <div class="relative aspect-video w-full rounded-xl overflow-hidden bg-rock-input border border-rock-text/15 shadow-inner">
-                    <!-- TO ADD YOUR YOUTUBE VIDEO: Replace "dQw4w9WgXcQ" in the src URL below with your own YouTube Video ID -->
-                    <iframe
-                        class="w-full h-full"
-                        src="https://www.youtube.com/embed/SMp2hq9ubY4?si=rVBbBNRYlz9pJ65D"
-                        title="Polarity Live Rock Covers Performance"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-
-            <!-- Photo Gallery Grid (Lightbox Enabled) -->
-            <div class="mb-6 flex items-center justify-between">
-                <h3 class="font-display text-2xl sm:text-3xl uppercase tracking-wide text-rock-text">Stage Shots & Crowd Chaos</h3>
-                <span class="text-xs text-rock-muted uppercase tracking-wider"><i class="fa-solid fa-expand mr-1 text-rock-amber"></i> Click any photo to enlarge</span>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="photo-gallery">
-                <!-- Photo 1 -->
-                <div onclick="openLightbox(0)" class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-rock-card border border-rock-text/15 cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80"
-                         onerror="this.src='https://placehold.co/800x600/4f4b6f/e1e0e5?text=LEAD+GUITAR+SOLO'"
-                         alt="Lead Guitarist Solo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-rock-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <div>
-                            <p class="text-sm font-bold text-rock-text">Face-Melting Solos</p>
-                            <p class="text-xs text-rock-amber">Guildhall Main Stage</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Photo 2 -->
-                <div onclick="openLightbox(1)" class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-rock-card border border-rock-text/15 cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80"
-                         onerror="this.src='https://placehold.co/800x600/4f4b6f/e1e0e5?text=VOCALS+AND+ENERGY'"
-                         alt="Frontman Vocalist" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-rock-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <div>
-                            <p class="text-sm font-bold text-rock-text">Commanding the Crowd</p>
-                            <p class="text-xs text-rock-amber">Summer Rock Fest</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Photo 3 -->
-                <div onclick="openLightbox(2)" class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-rock-card border border-rock-text/15 cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=800&q=80"
-                         onerror="this.src='https://placehold.co/800x600/4f4b6f/e1e0e5?text=PACKED+HOUSE'"
-                         alt="Packed Venue Crowd" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-rock-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <div>
-                            <p class="text-sm font-bold text-rock-text">Hands in the Air</p>
-                            <p class="text-xs text-rock-amber">Portsmouth Guildhall Showcase</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Photo 4 -->
-                <div onclick="openLightbox(3)" class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-rock-card border border-rock-text/15 cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=800&q=80"
-                         onerror="this.src='https://placehold.co/800x600/4f4b6f/e1e0e5?text=THUNDEROUS+DRUMS'"
-                         alt="Drummer Under Stage Lights" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-rock-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                        <div>
-                            <p class="text-sm font-bold text-rock-text">Thunderous Rhythm Section</p>
-                            <p class="text-xs text-rock-amber">Southsea Live Sessions</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="text-rock-red font-bold uppercase tracking-widest text-sm"
+              >Sight & Sound</span
+            >
+            <h2
+              class="font-display text-4xl sm:text-6xl uppercase tracking-wide text-rock-text mt-1"
+            >
+              Live Media Showcase
+            </h2>
+          </div>
+          <p class="text-rock-muted max-w-md text-sm sm:text-base"></p>
         </div>
+
+        <!-- Responsive 16:9 YouTube Video Showcase -->
+        <div
+          class="bg-rock-card border border-rock-text/15 rounded-2xl p-4 sm:p-6 mb-16 shadow-2xl"
+        >
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 px-1">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-rock-amber"
+                >Featured Live Performance</span
+              >
+              <h3 class="text-lg sm:text-xl font-bold text-rock-text">
+                Polarity — Live — Bartender and the Thief
+              </h3>
+            </div>
+            <a
+              href="https://www.youtube.com/@polaritybanduk"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-xs font-bold uppercase tracking-wider text-rock-amber hover:underline flex items-center gap-1.5"
+            >
+              <i class="fa-brands fa-youtube"></i> More Videos on Youtube
+            </a>
+          </div>
+
+          <!-- 16:9 Aspect Ratio YouTube Embed Container -->
+          <div
+            class="relative aspect-video w-full rounded-xl overflow-hidden bg-rock-input border border-rock-text/15 shadow-inner"
+          >
+            <!-- TO ADD YOUR YOUTUBE VIDEO: Replace "dQw4w9WgXcQ" in the src URL below with your own YouTube Video ID -->
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/SMp2hq9ubY4?si=rVBbBNRYlz9pJ65D"
+              title="Polarity Live Rock Covers Performance"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Photo Gallery Grid (Lightbox Enabled) -->
+        <div class="mb-6 flex items-center justify-between">
+          <h3 class="font-display text-2xl sm:text-3xl uppercase tracking-wide text-rock-text">
+            Stage Shots & Crowd Chaos
+          </h3>
+          <span class="text-xs text-rock-muted uppercase tracking-wider"
+            ><i class="fa-solid fa-expand mr-1 text-rock-amber"></i> Click any photo to
+            enlarge</span
+          >
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="photo-gallery">
+          <!-- Photo 1 -->
+          <div
+            onclick="openLightbox(0)"
+            class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-rock-card border border-rock-text/15 cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80"
+              onerror="
+                this.src = 'https://placehold.co/800x600/4f4b6f/e1e0e5?text=LEAD+GUITAR+SOLO'
+              "
+              alt="Lead Guitarist Solo"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-rock-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+            >
+              <div>
+                <p class="text-sm font-bold text-rock-text">Face-Melting Solos</p>
+                <p class="text-xs text-rock-amber">Guildhall Main Stage</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 2 -->
+          <div
+            onclick="openLightbox(1)"
+            class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-rock-card border border-rock-text/15 cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80"
+              onerror="
+                this.src = 'https://placehold.co/800x600/4f4b6f/e1e0e5?text=VOCALS+AND+ENERGY'
+              "
+              alt="Frontman Vocalist"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-rock-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+            >
+              <div>
+                <p class="text-sm font-bold text-rock-text">Commanding the Crowd</p>
+                <p class="text-xs text-rock-amber">Summer Rock Fest</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 3 -->
+          <div
+            onclick="openLightbox(2)"
+            class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-rock-card border border-rock-text/15 cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=800&q=80"
+              onerror="this.src = 'https://placehold.co/800x600/4f4b6f/e1e0e5?text=PACKED+HOUSE'"
+              alt="Packed Venue Crowd"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-rock-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+            >
+              <div>
+                <p class="text-sm font-bold text-rock-text">Hands in the Air</p>
+                <p class="text-xs text-rock-amber">Portsmouth Guildhall Showcase</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo 4 -->
+          <div
+            onclick="openLightbox(3)"
+            class="group relative aspect-[4/3] rounded-xl overflow-hidden bg-rock-card border border-rock-text/15 cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=800&q=80"
+              onerror="
+                this.src = 'https://placehold.co/800x600/4f4b6f/e1e0e5?text=THUNDEROUS+DRUMS'
+              "
+              alt="Drummer Under Stage Lights"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-rock-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4"
+            >
+              <div>
+                <p class="text-sm font-bold text-rock-text">Thunderous Rhythm Section</p>
+                <p class="text-xs text-rock-amber">Southsea Live Sessions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ==================== INTERACTIVE SETLIST SECTION ==================== -->
     <section id="setlist" class="py-24 bg-rock-dark border-t border-rock-text/15 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-rock-amber font-bold uppercase tracking-widest text-sm">Heavy Rotation</span>
-                <h2 class="font-display text-4xl sm:text-6xl uppercase tracking-wide text-rock-text mt-1">The Setlist Vault</h2>
-                <p class="text-rock-muted mt-3">
-                    Filter by era or search for your favorite rock icons. Booking a private event? Pick your top 25 tracks and we’ll tailor the night around your crowd.
-                </p>
-            </div>
-
-            <!-- Controls: Era Tabs & Search Input -->
-            <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-8 bg-rock-card p-4 rounded-2xl border border-rock-text/15">
-                <!-- Category Filter Pills -->
-                <div class="flex flex-wrap gap-2" id="era-filters">
-                    <button data-era="all" class="era-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider bg-rock-red text-white shadow-neon-red transition-all">
-                        All Tracks
-                    </button>
-                    <button data-era="70s-80s" class="era-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider bg-rock-deep text-rock-text/90 hover:bg-rock-input transition-all">
-                        70s/80s Classic Rock
-                    </button>
-                    <button data-era="90s" class="era-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider bg-rock-deep text-rock-text/90 hover:bg-rock-input transition-all">
-                        90s Grunge & Alt
-                    </button>
-                    <button data-era="2000s" class="era-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider bg-rock-deep text-rock-text/90 hover:bg-rock-input transition-all">
-                        2000s+ Modern Anthems
-                    </button>
-                </div>
-
-                <!-- Search Bar -->
-                <div class="relative w-full lg:w-80">
-                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-rock-muted"></i>
-                    <input type="text" id="setlist-search" placeholder="Search artist or song (e.g. Queen, Foo...)"
-                           class="w-full pl-11 pr-4 py-2.5 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-amber focus:outline-none text-sm text-rock-text placeholder-rock-muted/75">
-                </div>
-            </div>
-
-            <!-- Setlist Results Counter -->
-            <div class="flex items-center justify-between text-xs uppercase tracking-wider text-rock-muted mb-4 px-1">
-                <span id="song-count">Showing 21 tracks</span>
-                <span><i class="fa-solid fa-fire text-rock-red mr-1"></i> = Crowd Favorite</span>
-            </div>
-
-            <!-- Dynamic Setlist Grid -->
-            <div id="setlist-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Populated by JavaScript -->
-            </div>
-
-            <!-- Empty Search Fallback -->
-            <div id="setlist-empty" class="hidden text-center py-16 bg-rock-card rounded-2xl border border-rock-text/15">
-                <i class="fa-solid fa-guitar text-4xl text-rock-muted mb-3"></i>
-                <h3 class="text-xl font-bold text-rock-text">No tracks matched your search</h3>
-                <p class="text-rock-muted text-sm mt-1">Try searching another artist or reset the era filter—we also take custom requests!</p>
-                <button onclick="resetSetlistFilters()" class="mt-4 px-5 py-2 rounded-lg bg-rock-deep hover:bg-rock-input text-sm font-bold text-rock-text border border-rock-text/20">
-                    Reset Filters
-                </button>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-rock-amber font-bold uppercase tracking-widest text-sm"
+            >Heavy Rotation</span
+          >
+          <h2 class="font-display text-4xl sm:text-6xl uppercase tracking-wide text-rock-text mt-1">
+            The Setlist Vault
+          </h2>
+          <p class="text-rock-muted mt-3">
+            Filter by era or search for your favorite rock icons. Booking a private event? Pick your
+            top 25 tracks and we’ll tailor the night around your crowd.
+          </p>
         </div>
+
+        <!-- Controls: Era Tabs & Search Input -->
+        <div
+          class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-8 bg-rock-card p-4 rounded-2xl border border-rock-text/15"
+        >
+          <!-- Category Filter Pills -->
+          <div class="flex flex-wrap gap-2" id="era-filters">
+            <button
+              data-era="all"
+              class="era-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider bg-rock-red text-white shadow-neon-red transition-all"
+            >
+              All Tracks
+            </button>
+            <button
+              data-era="70s-80s"
+              class="era-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider bg-rock-deep text-rock-text/90 hover:bg-rock-input transition-all"
+            >
+              70s/80s Classic Rock
+            </button>
+            <button
+              data-era="90s"
+              class="era-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider bg-rock-deep text-rock-text/90 hover:bg-rock-input transition-all"
+            >
+              90s Grunge & Alt
+            </button>
+            <button
+              data-era="2000s"
+              class="era-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider bg-rock-deep text-rock-text/90 hover:bg-rock-input transition-all"
+            >
+              2000s+ Modern Anthems
+            </button>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="relative w-full lg:w-80">
+            <i
+              class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-rock-muted"
+            ></i>
+            <input
+              type="text"
+              id="setlist-search"
+              placeholder="Search artist or song (e.g. Queen, Foo...)"
+              class="w-full pl-11 pr-4 py-2.5 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-amber focus:outline-none text-sm text-rock-text placeholder-rock-muted/75"
+            />
+          </div>
+        </div>
+
+        <!-- Setlist Results Counter -->
+        <div
+          class="flex items-center justify-between text-xs uppercase tracking-wider text-rock-muted mb-4 px-1"
+        >
+          <span id="song-count">Showing 21 tracks</span>
+          <span><i class="fa-solid fa-fire text-rock-red mr-1"></i> = Crowd Favorite</span>
+        </div>
+
+        <!-- Dynamic Setlist Grid -->
+        <div id="setlist-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- Empty Search Fallback -->
+        <div
+          id="setlist-empty"
+          class="hidden text-center py-16 bg-rock-card rounded-2xl border border-rock-text/15"
+        >
+          <i class="fa-solid fa-guitar text-4xl text-rock-muted mb-3"></i>
+          <h3 class="text-xl font-bold text-rock-text">No tracks matched your search</h3>
+          <p class="text-rock-muted text-sm mt-1">
+            Try searching another artist or reset the era filter—we also take custom requests!
+          </p>
+          <button
+            onclick="resetSetlistFilters()"
+            class="mt-4 px-5 py-2 rounded-lg bg-rock-deep hover:bg-rock-input text-sm font-bold text-rock-text border border-rock-text/20"
+          >
+            Reset Filters
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- ==================== UPCOMING GIGS / TOUR DATES ==================== -->
     <section id="gigs" class="py-24 bg-rock-deep border-t border-rock-text/15">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
-                <div>
-                    <span class="text-rock-red font-bold uppercase tracking-widest text-sm">On The Road</span>
-                    <h2 class="font-display text-4xl sm:text-6xl uppercase tracking-wide text-rock-text mt-1">Upcoming Gig Dates</h2>
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="text-rock-red font-bold uppercase tracking-widest text-sm"
+              >On The Road</span
+            >
+            <h2
+              class="font-display text-4xl sm:text-6xl uppercase tracking-wide text-rock-text mt-1"
+            >
+              Upcoming Gig Dates
+            </h2>
+          </div>
+          <a
+            href="#contact"
+            class="text-sm font-bold uppercase tracking-wider text-rock-amber hover:text-amber-300 flex items-center gap-2"
+          >
+            Want us at your venue? Inquire <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Gig Item 1 -->
+          <div
+            class="group bg-rock-card hover:bg-rock-card/80 border border-rock-text/15 hover:border-rock-red/60 rounded-2xl p-5 sm:p-6 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4"
+          >
+            <div class="flex items-center gap-5">
+              <div
+                class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-rock-input border border-rock-text/15 flex flex-col items-center justify-center flex-shrink-0 group-hover:border-rock-red transition-colors"
+              >
+                <span class="text-xs font-extrabold uppercase text-rock-red">DEC</span>
+                <span class="font-display text-2xl sm:text-3xl text-rock-text">18</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="px-2 py-0.5 rounded bg-rock-red/20 text-rock-red text-[11px] font-bold uppercase"
+                    >Private</span
+                  >
+                  <span class="text-xs text-rock-muted font-medium"> </span>
                 </div>
-                <a href="#contact" class="text-sm font-bold uppercase tracking-wider text-rock-amber hover:text-amber-300 flex items-center gap-2">
-                    Want us at your venue? Inquire <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                <h3 class="text-xl sm:text-2xl font-bold text-rock-text mt-1">Private Party</h3>
+                <p class="text-sm text-rock-muted">
+                  <i class="fa-solid fa-location-dot text-rock-amber mr-1.5"></i>Private
+                </p>
+              </div>
             </div>
+          </div>
 
-            <div class="space-y-4">
-                <!-- Gig Item 1 -->
-                <div class="group bg-rock-card hover:bg-rock-card/80 border border-rock-text/15 hover:border-rock-red/60 rounded-2xl p-5 sm:p-6 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
-                    <div class="flex items-center gap-5">
-                        <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-rock-input border border-rock-text/15 flex flex-col items-center justify-center flex-shrink-0 group-hover:border-rock-red transition-colors">
-                            <span class="text-xs font-extrabold uppercase text-rock-red">DEC</span>
-                            <span class="font-display text-2xl sm:text-3xl text-rock-text">18</span>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="px-2 py-0.5 rounded bg-rock-red/20 text-rock-red text-[11px] font-bold uppercase">Private</span>
-                                <span class="text-xs text-rock-muted font-medium"> </span>
-                            </div>
-                            <h3 class="text-xl sm:text-2xl font-bold text-rock-text mt-1">Private Party</h3>
-                            <p class="text-sm text-rock-muted"><i class="fa-solid fa-location-dot text-rock-amber mr-1.5"></i>Albert Rd, Southsea, Portsmouth</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gig Item 2
+          <!-- Gig Item 2
                 <div class="group bg-rock-card hover:bg-rock-card/80 border border-rock-text/15 hover:border-rock-amber/60 rounded-2xl p-5 sm:p-6 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div class="flex items-center gap-5">
                         <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-rock-input border border-rock-text/15 flex flex-col items-center justify-center flex-shrink-0 group-hover:border-rock-amber transition-colors">
@@ -378,7 +609,7 @@
                     </div>
                 </div>-->
 
-                <!-- Gig Item 3
+          <!-- Gig Item 3
                 <div class="group bg-rock-card hover:bg-rock-card/80 border border-rock-text/15 hover:border-rock-red/60 rounded-2xl p-5 sm:p-6 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div class="flex items-center gap-5">
                         <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-rock-input border border-rock-text/15 flex flex-col items-center justify-center flex-shrink-0 group-hover:border-rock-red transition-colors">
@@ -396,7 +627,7 @@
                     </div>
                 </div>-->
 
-                <!-- Gig Item 4
+          <!-- Gig Item 4
                 <div class="group bg-rock-card hover:bg-rock-card/80 border border-rock-text/15 hover:border-rock-amber/60 rounded-2xl p-5 sm:p-6 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div class="flex items-center gap-5">
                         <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-rock-input border border-rock-text/15 flex flex-col items-center justify-center flex-shrink-0 group-hover:border-rock-amber transition-colors">
@@ -414,352 +645,569 @@
                     </div>
                     </div>
                 </div> -->
-            </div>
         </div>
+      </div>
     </section>
 
     <!-- ==================== CONTACT & BOOKING SECTION ==================== -->
-    <section id="contact" class="py-24 bg-rock-dark border-t border-rock-text/15 relative overflow-hidden">
-        <!-- Subtle Ambient Glow -->
-        <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-rock-red/15 rounded-full blur-3xl pointer-events-none"></div>
+    <section
+      id="contact"
+      class="py-24 bg-rock-dark border-t border-rock-text/15 relative overflow-hidden"
+    >
+      <!-- Subtle Ambient Glow -->
+      <div
+        class="absolute -bottom-32 -right-32 w-96 h-96 bg-rock-red/15 rounded-full blur-3xl pointer-events-none"
+      ></div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <!-- Left Column: Direct Contact, Management & Socials -->
+          <div class="lg:col-span-5 flex flex-col justify-between">
+            <div>
+              <span class="text-rock-amber font-bold uppercase tracking-widest text-sm"
+                >Lock In Your Date</span
+              >
+              <h2
+                class="font-display text-4xl sm:text-6xl uppercase tracking-wide text-rock-text mt-1"
+              >
+                Book Polarity
+              </h2>
+              <p class="text-rock-muted mt-4 leading-relaxed">
+                Based in Portsmouth and available across Hampshire, Sussex, and the South Coast for
+                live music venues, festivals, corporate parties, and rock weddings. Full PA and
+                lighting provided.
+              </p>
 
-                <!-- Left Column: Direct Contact, Management & Socials -->
-                <div class="lg:col-span-5 flex flex-col justify-between">
-                    <div>
-                        <span class="text-rock-amber font-bold uppercase tracking-widest text-sm">Lock In Your Date</span>
-                        <h2 class="font-display text-4xl sm:text-6xl uppercase tracking-wide text-rock-text mt-1">Book Polarity</h2>
-                        <p class="text-rock-muted mt-4 leading-relaxed">
-                            Based in Portsmouth and available across Hampshire, Sussex, and the South Coast for live music venues, festivals, corporate parties, and rock weddings. Full PA and  lighting provided.
-                        </p>
-
-                        <!-- Contact Cards -->
-                        <div class="mt-8 space-y-4">
-                            <div class="p-4 rounded-xl bg-rock-card border border-rock-text/15 flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-lg bg-rock-red/20 text-rock-red flex items-center justify-center text-xl flex-shrink-0">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div>
-                                    <div class="text-xs uppercase tracking-wider text-rock-muted">Direct Booking Email</div>
-                                    <a href="mailto:bookings@polarityband.co.uk" class="text-rock-text font-bold hover:text-rock-red transition-colors">yamnivek1984+polarity@gmail.com</a>
-                                </div>
-                            </div>
-
-                            <a href="https://www.facebook.com/polarityband" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-rock-card border border-rock-text/15 hover:border-rock-amber/60 transition-all flex items-center gap-4 group">
-                                <div class="w-12 h-12 rounded-lg bg-rock-amber/20 text-rock-amber flex items-center justify-center text-xl flex-shrink-0 group-hover:scale-105 transition-transform">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </div>
-                                <div>
-                                    <div class="text-xs uppercase tracking-wider text-rock-muted">Official Facebook Page</div>
-                                    <div class="text-rock-text font-bold group-hover:text-rock-amber transition-colors">facebook.com/polarityband <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></div>
-                                </div>
-                            </a>
-
-                            <div class="p-4 rounded-xl bg-rock-card border border-rock-text/15 flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-lg bg-rock-deep text-rock-text flex items-center justify-center text-xl flex-shrink-0">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div>
-                                    <div class="text-xs uppercase tracking-wider text-rock-muted">Home Base &amp; Touring Radius</div>
-                                    <div class="text-sm text-rock-text font-semibold">Portsmouth, Hampshire, UK • South Coast &amp; Beyond</div>
-                                </div>
-                            </div>
-
-                            <div class="p-4 rounded-xl bg-rock-card border border-rock-text/15 flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-lg bg-rock-deep text-rock-text flex items-center justify-center text-xl flex-shrink-0">
-                                    <i class="fa-solid fa-sliders"></i>
-                                </div>
-                                <div>
-                                    <div class="text-xs uppercase tracking-wider text-rock-muted">Tech Rider &amp; Production</div>
-                                    <div class="text-sm text-rock-text font-semibold">Full Live Lineup • PA &amp; Lighting</div>
-                                </div>
-                            </div>
-                        </div>
+              <!-- Contact Cards -->
+              <div class="mt-8 space-y-4">
+                <div
+                  class="p-4 rounded-xl bg-rock-card border border-rock-text/15 flex items-center gap-4"
+                >
+                  <div
+                    class="w-12 h-12 rounded-lg bg-rock-red/20 text-rock-red flex items-center justify-center text-xl flex-shrink-0"
+                  >
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs uppercase tracking-wider text-rock-muted">
+                      Direct Booking Email
                     </div>
-
-                    <!-- Social Media Links -->
-                    <div class="mt-10 pt-8 border-t border-rock-text/15">
-                        <div class="text-xs font-bold uppercase tracking-widest text-rock-muted mb-4">Connect With Polarity</div>
-                        <div class="flex flex-wrap items-center gap-3">
-                            <a href="https://www.facebook.com/polarityband" target="_blank" rel="noopener noreferrer" aria-label="Polarity Facebook" class="px-4 h-11 rounded-xl bg-rock-card border border-rock-text/20 hover:border-rock-amber hover:text-rock-amber flex items-center justify-center gap-2 text-sm font-bold transition-all">
-                                <i class="fa-brands fa-facebook-f text-base"></i> @polarityband
-                            </a>
-                            <a href="https://www.youtube.com/@polaritybanduk" aria-label="YouTube" class="w-11 h-11 rounded-xl bg-rock-card border border-rock-text/15 hover:border-rock-red hover:text-rock-red flex items-center justify-center text-lg transition-all">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                            <a href="https://www.instagram.com/polaritybandUK" aria-label="Instagram" class="w-11 h-11 rounded-xl bg-rock-card border border-rock-text/15 hover:border-rock-red hover:text-rock-red flex items-center justify-center text-lg transition-all">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="#setlist" aria-label="Spotify" class="w-11 h-11 rounded-xl bg-rock-card border border-rock-text/15 hover:border-emerald-400 hover:text-emerald-300 flex items-center justify-center text-lg transition-all">
-                                <i class="fa-brands fa-spotify"></i>
-                            </a>
-                        </div>
-                    </div>
+                    <a
+                      href="mailto:yamnivek1984+polarity@gmail.com"
+                      class="text-rock-text font-bold hover:text-rock-red transition-colors"
+                      >yamnivek1984@gmail.com</a
+                    >
+                  </div>
                 </div>
 
-                <!-- Right Column: Booking Inquiry Form -->
-                <div class="lg:col-span-7">
-                    <div class="bg-rock-card border border-rock-text/15 rounded-2xl p-6 sm:p-10 shadow-2xl">
-                        <h3 class="font-display text-2xl sm:text-3xl uppercase tracking-wide text-rock-text mb-6">Send A Booking Inquiry</h3>
-
-                        <form id="booking-form" class="space-y-5">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                                <div>
-                                    <label for="name" class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2">Your Name *</label>
-                                    <input type="text" id="name" required placeholder="e.g. Sarah Jenkins"
-                                           class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text placeholder-rock-muted/60 text-sm">
-                                </div>
-                                <div>
-                                    <label for="email" class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2">Email Address *</label>
-                                    <input type="email" id="email" required placeholder="sarah@venue.co.uk"
-                                           class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text placeholder-rock-muted/60 text-sm">
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                                <div>
-                                    <label for="event-date" class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2">Event Date *</label>
-                                    <input type="date" id="event-date" required
-                                           class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text text-sm [color-scheme:dark]">
-                                </div>
-                                <div>
-                                    <label for="event-type" class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2">Event Type *</label>
-                                    <select id="event-type" required
-                                            class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text text-sm">
-                                        <option value="Live Music Venue / Club">Live Music Venue / Club</option>
-                                        <option value="Festival / Outdoor Stage">Festival / Outdoor Stage</option>
-                                        <option value="Private Party / Milestone">Private Party / Milestone</option>
-                                        <option value="Rock Wedding Reception">Rock Wedding Reception</option>
-                                        <option value="Corporate Event">Corporate Event</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="venue" class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2">Venue Name &amp; City / Location *</label>
-                                <input type="text" id="venue" required placeholder="e.g. The Wedgewood Rooms, Southsea, Portsmouth"
-                                       class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text placeholder-rock-muted/60 text-sm">
-                            </div>
-
-                            <div>
-                                <label for="message" class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2">Set Length, PA Needs & Details</label>
-                                <textarea id="message" rows="4" placeholder="Tell us about your event schedule, expected crowd size, or favorite songs you want on the setlist..."
-                                          class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text placeholder-rock-muted/60 text-sm"></textarea>
-                            </div>
-
-                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-rock-red to-rock-crimson hover:from-rose-500 hover:to-rock-red text-white font-bold uppercase tracking-wider text-sm sm:text-base shadow-neon-red transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-paper-plane"></i> Check Availability & Request Quote
-                            </button>
-                        </form>
-
-                        <!-- Submission Feedback Banner (Hidden initially) -->
-                        <div id="form-feedback" class="hidden mt-6 p-5 rounded-xl bg-emerald-950/60 border border-emerald-400/50 text-emerald-100">
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-2xl text-emerald-300 mt-0.5"></i>
-                                <div>
-                                    <h4 class="font-bold text-rock-text text-base">Inquiry Received! Polarity Will Be In Touch.</h4>
-                                    <p id="feedback-details" class="text-sm text-emerald-100/90 mt-1"></p>
-                                    <button onclick="resetBookingForm()" class="mt-3 text-xs font-bold uppercase tracking-wider text-emerald-300 hover:underline">
-                                        Send Another Inquiry
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                <a
+                  href="https://www.facebook.com/polarityband"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="p-4 rounded-xl bg-rock-card border border-rock-text/15 hover:border-rock-amber/60 transition-all flex items-center gap-4 group"
+                >
+                  <div
+                    class="w-12 h-12 rounded-lg bg-rock-amber/20 text-rock-amber flex items-center justify-center text-xl flex-shrink-0 group-hover:scale-105 transition-transform"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs uppercase tracking-wider text-rock-muted">
+                      Official Facebook Page
                     </div>
+                    <div
+                      class="text-rock-text font-bold group-hover:text-rock-amber transition-colors"
+                    >
+                      facebook.com/polarityband
+                      <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i>
+                    </div>
+                  </div>
+                </a>
+
+                <div
+                  class="p-4 rounded-xl bg-rock-card border border-rock-text/15 flex items-center gap-4"
+                >
+                  <div
+                    class="w-12 h-12 rounded-lg bg-rock-deep text-rock-text flex items-center justify-center text-xl flex-shrink-0"
+                  >
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs uppercase tracking-wider text-rock-muted">
+                      Home Base &amp; Touring Radius
+                    </div>
+                    <div class="text-sm text-rock-text font-semibold">
+                      Portsmouth, Hampshire, UK • South Coast &amp; Beyond
+                    </div>
+                  </div>
                 </div>
+
+                <div
+                  class="p-4 rounded-xl bg-rock-card border border-rock-text/15 flex items-center gap-4"
+                >
+                  <div
+                    class="w-12 h-12 rounded-lg bg-rock-deep text-rock-text flex items-center justify-center text-xl flex-shrink-0"
+                  >
+                    <i class="fa-solid fa-sliders"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs uppercase tracking-wider text-rock-muted">
+                      Tech Rider &amp; Production
+                    </div>
+                    <div class="text-sm text-rock-text font-semibold">
+                      Full Live Lineup • PA &amp; Lighting
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- Social Media Links -->
+            <div class="mt-10 pt-8 border-t border-rock-text/15">
+              <div class="text-xs font-bold uppercase tracking-widest text-rock-muted mb-4">
+                Connect With Polarity
+              </div>
+              <div class="flex flex-wrap items-center gap-3">
+                <a
+                  href="https://www.facebook.com/polarityband"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Polarity Facebook"
+                  class="px-4 h-11 rounded-xl bg-rock-card border border-rock-text/20 hover:border-rock-amber hover:text-rock-amber flex items-center justify-center gap-2 text-sm font-bold transition-all"
+                >
+                  <i class="fa-brands fa-facebook-f text-base"></i> @polarityband
+                </a>
+                <a
+                  href="https://www.youtube.com/@polaritybanduk"
+                  aria-label="YouTube"
+                  class="w-11 h-11 rounded-xl bg-rock-card border border-rock-text/15 hover:border-rock-red hover:text-rock-red flex items-center justify-center text-lg transition-all"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/polaritybandUK"
+                  aria-label="Instagram"
+                  class="w-11 h-11 rounded-xl bg-rock-card border border-rock-text/15 hover:border-rock-red hover:text-rock-red flex items-center justify-center text-lg transition-all"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="#setlist"
+                  aria-label="Spotify"
+                  class="w-11 h-11 rounded-xl bg-rock-card border border-rock-text/15 hover:border-emerald-400 hover:text-emerald-300 flex items-center justify-center text-lg transition-all"
+                >
+                  <i class="fa-brands fa-spotify"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Booking Inquiry Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-rock-card border border-rock-text/15 rounded-2xl p-6 sm:p-10 shadow-2xl">
+              <h3
+                class="font-display text-2xl sm:text-3xl uppercase tracking-wide text-rock-text mb-6"
+              >
+                Send A Booking Inquiry
+              </h3>
+
+              <form id="booking-form" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2"
+                      >Your Name *</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      required
+                      placeholder="e.g. Sarah Jenkins"
+                      class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text placeholder-rock-muted/60 text-sm"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2"
+                      >Email Address *</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      required
+                      placeholder="sarah@venue.co.uk"
+                      class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text placeholder-rock-muted/60 text-sm"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label
+                      for="event-date"
+                      class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2"
+                      >Event Date *</label
+                    >
+                    <input
+                      type="date"
+                      id="event-date"
+                      required
+                      class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text text-sm [color-scheme:dark]"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="event-type"
+                      class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2"
+                      >Event Type *</label
+                    >
+                    <select
+                      id="event-type"
+                      required
+                      class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text text-sm"
+                    >
+                      <option value="Live Music Venue / Club">Live Music Venue / Club</option>
+                      <option value="Festival / Outdoor Stage">Festival / Outdoor Stage</option>
+                      <option value="Private Party / Milestone">Private Party / Milestone</option>
+                      <option value="Rock Wedding Reception">Rock Wedding Reception</option>
+                      <option value="Corporate Event">Corporate Event</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="venue"
+                    class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2"
+                    >Venue Name &amp; City / Location *</label
+                  >
+                  <input
+                    type="text"
+                    id="venue"
+                    required
+                    placeholder="e.g. The Wedgewood Rooms, Southsea, Portsmouth"
+                    class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text placeholder-rock-muted/60 text-sm"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="message"
+                    class="block text-xs font-bold uppercase tracking-wider text-rock-muted mb-2"
+                    >Set Length, PA Needs & Details</label
+                  >
+                  <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Tell us about your event schedule, expected crowd size, or favorite songs you want on the setlist..."
+                    class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text placeholder-rock-muted/60 text-sm"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full py-4 rounded-xl bg-gradient-to-r from-rock-red to-rock-crimson hover:from-rose-500 hover:to-rock-red text-white font-bold uppercase tracking-wider text-sm sm:text-base shadow-neon-red transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                >
+                  <i class="fa-solid fa-paper-plane"></i> Check Availability & Request Quote
+                </button>
+              </form>
+
+              <!-- Submission Feedback Banner (Hidden initially) -->
+              <div
+                id="form-feedback"
+                class="hidden mt-6 p-5 rounded-xl bg-emerald-950/60 border border-emerald-400/50 text-emerald-100"
+              >
+                <div class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-2xl text-emerald-300 mt-0.5"></i>
+                  <div>
+                    <h4 class="font-bold text-rock-text text-base">
+                      Inquiry Received! Polarity Will Be In Touch.
+                    </h4>
+                    <p id="feedback-details" class="text-sm text-emerald-100/90 mt-1"></p>
+                    <button
+                      onclick="resetBookingForm()"
+                      class="mt-3 text-xs font-bold uppercase tracking-wider text-emerald-300 hover:underline"
+                    >
+                      Send Another Inquiry
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ==================== FOOTER ==================== -->
     <footer class="bg-rock-deep border-t border-rock-text/15 py-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-bolt text-rock-red"></i>
-                <span class="font-display text-xl tracking-wider uppercase text-rock-text">POLARITY</span>
-                <span class="text-xs text-rock-muted ml-1">• Portsmouth, UK</span>
-            </div>
-            <p class="text-xs text-rock-muted text-center">
-                &copy; 2026 POLARITY Rock Covers Band. All Rights Reserved.
-            </p>
-            <div class="flex items-center gap-6 text-xs font-semibold uppercase tracking-wider text-rock-muted">
-                <a href="https://www.facebook.com/polarityband" target="_blank" rel="noopener noreferrer" class="hover:text-rock-amber flex items-center gap-1.5">
-                    <i class="fa-brands fa-facebook"></i> Facebook
-                </a>
-                <a href="#setlist" class="hover:text-rock-text">Setlist</a>
-                <a href="#contact" class="hover:text-rock-text">Book</a>
-            </div>
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-bolt text-rock-red"></i>
+          <span class="font-display text-xl tracking-wider uppercase text-rock-text">POLARITY</span>
+          <span class="text-xs text-rock-muted ml-1">• Portsmouth, UK</span>
         </div>
+        <p class="text-xs text-rock-muted text-center">
+          &copy; 2026 POLARITY Rock Covers Band. All Rights Reserved.
+        </p>
+        <div
+          class="flex items-center gap-6 text-xs font-semibold uppercase tracking-wider text-rock-muted"
+        >
+          <a
+            href="https://www.facebook.com/polarityband"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-rock-amber flex items-center gap-1.5"
+          >
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </a>
+          <a href="#setlist" class="hover:text-rock-text">Setlist</a>
+          <a href="#contact" class="hover:text-rock-text">Book</a>
+        </div>
+      </div>
     </footer>
 
     <!-- ==================== PHOTO LIGHTBOX MODAL ==================== -->
-    <div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-rock-deep/95 backdrop-blur-md flex items-center justify-center p-4">
-        <button onclick="closeLightbox()" aria-label="Close Lightbox" class="absolute top-5 right-5 w-12 h-12 rounded-full bg-rock-card hover:bg-rock-red text-rock-text hover:text-white flex items-center justify-center text-xl transition-colors border border-rock-text/15">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
+    <div
+      id="lightbox-modal"
+      class="hidden fixed inset-0 z-50 bg-rock-deep/95 backdrop-blur-md flex items-center justify-center p-4"
+    >
+      <button
+        onclick="closeLightbox()"
+        aria-label="Close Lightbox"
+        class="absolute top-5 right-5 w-12 h-12 rounded-full bg-rock-card hover:bg-rock-red text-rock-text hover:text-white flex items-center justify-center text-xl transition-colors border border-rock-text/15"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
 
-        <button onclick="changeLightboxImage(-1)" aria-label="Previous Photo" class="absolute left-3 sm:left-8 w-12 h-12 rounded-full bg-rock-card/90 hover:bg-rock-red text-rock-text hover:text-white flex items-center justify-center text-xl transition-colors border border-rock-text/15">
-            <i class="fa-solid fa-chevron-left"></i>
-        </button>
+      <button
+        onclick="changeLightboxImage(-1)"
+        aria-label="Previous Photo"
+        class="absolute left-3 sm:left-8 w-12 h-12 rounded-full bg-rock-card/90 hover:bg-rock-red text-rock-text hover:text-white flex items-center justify-center text-xl transition-colors border border-rock-text/15"
+      >
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
 
-        <div class="max-w-4xl w-full text-center">
-            <img id="lightbox-img" src="" alt="Enlarged Live Performance" class="max-h-[75vh] mx-auto rounded-xl border border-rock-text/20 shadow-2xl object-contain">
-            <div class="mt-4">
-                <h4 id="lightbox-title" class="text-lg sm:text-xl font-bold text-rock-text"></h4>
-                <p id="lightbox-caption" class="text-sm text-rock-amber"></p>
-            </div>
+      <div class="max-w-4xl w-full text-center">
+        <img
+          id="lightbox-img"
+          src=""
+          alt="Enlarged Live Performance"
+          class="max-h-[75vh] mx-auto rounded-xl border border-rock-text/20 shadow-2xl object-contain"
+        />
+        <div class="mt-4">
+          <h4 id="lightbox-title" class="text-lg sm:text-xl font-bold text-rock-text"></h4>
+          <p id="lightbox-caption" class="text-sm text-rock-amber"></p>
         </div>
+      </div>
 
-        <button onclick="changeLightboxImage(1)" aria-label="Next Photo" class="absolute right-3 sm:right-8 w-12 h-12 rounded-full bg-rock-card/90 hover:bg-rock-red text-rock-text hover:text-white flex items-center justify-center text-xl transition-colors border border-rock-text/15">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
+      <button
+        onclick="changeLightboxImage(1)"
+        aria-label="Next Photo"
+        class="absolute right-3 sm:right-8 w-12 h-12 rounded-full bg-rock-card/90 hover:bg-rock-red text-rock-text hover:text-white flex items-center justify-center text-xl transition-colors border border-rock-text/15"
+      >
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
 
     <!-- ==================== GIG RSVP / TICKET MODAL ==================== -->
-    <div id="rsvp-modal" class="hidden fixed inset-0 z-50 bg-rock-deep/90 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="max-w-md w-full bg-rock-card border border-rock-text/20 rounded-2xl p-6 shadow-2xl">
-            <div class="flex items-center justify-between mb-4">
-                <span class="text-xs font-bold uppercase tracking-widest text-rock-amber">Show RSVP & Tickets</span>
-                <button onclick="closeRsvpModal()" class="text-rock-muted hover:text-rock-text"><i class="fa-solid fa-xmark text-lg"></i></button>
-            </div>
-            <h3 id="rsvp-show-title" class="text-xl font-bold text-rock-text mb-2"></h3>
-            <p class="text-sm text-rock-muted mb-5">Drop your email to reserve guestlist spots or receive the direct box-office link.</p>
-            <form id="rsvp-form" class="space-y-4">
-                <input type="email" id="rsvp-email" required placeholder="you@example.com" class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text placeholder-rock-muted/60 text-sm">
-                <button type="submit" class="w-full py-3 rounded-xl bg-rock-red hover:bg-rock-crimson text-white font-bold uppercase tracking-wider text-sm shadow-neon-red">
-                    Confirm RSVP
-                </button>
-            </form>
-            <div id="rsvp-success" class="hidden mt-4 p-3 rounded-xl bg-emerald-950/70 border border-emerald-400/40 text-emerald-200 text-sm text-center">
-                You're on the list! Check your inbox for show details.
-            </div>
+    <div
+      id="rsvp-modal"
+      class="hidden fixed inset-0 z-50 bg-rock-deep/90 backdrop-blur-sm flex items-center justify-center p-4"
+    >
+      <div
+        class="max-w-md w-full bg-rock-card border border-rock-text/20 rounded-2xl p-6 shadow-2xl"
+      >
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-rock-amber"
+            >Show RSVP & Tickets</span
+          >
+          <button onclick="closeRsvpModal()" class="text-rock-muted hover:text-rock-text">
+            <i class="fa-solid fa-xmark text-lg"></i>
+          </button>
         </div>
+        <h3 id="rsvp-show-title" class="text-xl font-bold text-rock-text mb-2"></h3>
+        <p class="text-sm text-rock-muted mb-5">
+          Drop your email to reserve guestlist spots or receive the direct box-office link.
+        </p>
+        <form id="rsvp-form" class="space-y-4">
+          <input
+            type="email"
+            id="rsvp-email"
+            required
+            placeholder="you@example.com"
+            class="w-full px-4 py-3 rounded-xl bg-rock-input border border-rock-text/20 focus:border-rock-red focus:outline-none text-rock-text placeholder-rock-muted/60 text-sm"
+          />
+          <button
+            type="submit"
+            class="w-full py-3 rounded-xl bg-rock-red hover:bg-rock-crimson text-white font-bold uppercase tracking-wider text-sm shadow-neon-red"
+          >
+            Confirm RSVP
+          </button>
+        </form>
+        <div
+          id="rsvp-success"
+          class="hidden mt-4 p-3 rounded-xl bg-emerald-950/70 border border-emerald-400/40 text-emerald-200 text-sm text-center"
+        >
+          You're on the list! Check your inbox for show details.
+        </div>
+      </div>
     </div>
 
     <!-- ==================== VANILLA JAVASCRIPT ==================== -->
     <script>
-        // -------------------- 1. MOBILE NAVIGATION TOGGLE --------------------
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
+      // -------------------- 1. MOBILE NAVIGATION TOGGLE --------------------
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
 
-        mobileMenuBtn.addEventListener('click', () => {
-            const isHidden = mobileMenu.classList.toggle('hidden');
-            menuIcon.className = isHidden ? 'fa-solid fa-bars text-2xl' : 'fa-solid fa-xmark text-2xl';
+      mobileMenuBtn.addEventListener("click", () => {
+        const isHidden = mobileMenu.classList.toggle("hidden");
+        menuIcon.className = isHidden ? "fa-solid fa-bars text-2xl" : "fa-solid fa-xmark text-2xl";
+      });
+
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuIcon.className = "fa-solid fa-bars text-2xl";
+        });
+      });
+
+      // -------------------- 3. PHOTO GALLERY LIGHTBOX --------------------
+      const galleryPhotos = [
+        {
+          src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1400&q=85",
+          title: "Face-Melting Solos",
+          caption: "Portsmouth Guildhall • Captured Live",
+        },
+        {
+          src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1400&q=85",
+          title: "Commanding the Crowd",
+          caption: "Southsea Live • Main Stage",
+        },
+        {
+          src: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1400&q=85",
+          title: "Hands in the Air",
+          caption: "Portsmouth Guildhall Showcase • Sold Out",
+        },
+        {
+          src: "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=1400&q=85",
+          title: "Thunderous Rhythm Section",
+          caption: "Southsea Live Sessions",
+        },
+      ];
+
+      let currentPhotoIndex = 0;
+
+      function openLightbox(index) {
+        currentPhotoIndex = index;
+        updateLightboxContent();
+        document.getElementById("lightbox-modal").classList.remove("hidden");
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox-modal").classList.add("hidden");
+      }
+
+      function changeLightboxImage(direction) {
+        currentPhotoIndex =
+          (currentPhotoIndex + direction + galleryPhotos.length) % galleryPhotos.length;
+        updateLightboxContent();
+      }
+
+      function updateLightboxContent() {
+        const photo = galleryPhotos[currentPhotoIndex];
+        document.getElementById("lightbox-img").src = photo.src;
+        document.getElementById("lightbox-title").textContent = photo.title;
+        document.getElementById("lightbox-caption").textContent = photo.caption;
+      }
+
+      // Keyboard support for modals (Escape, Left/Right arrows)
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeLightbox();
+          closeVideoModal();
+          closeRsvpModal();
+        } else if (!document.getElementById("lightbox-modal").classList.contains("hidden")) {
+          if (e.key === "ArrowRight") changeLightboxImage(1);
+          if (e.key === "ArrowLeft") changeLightboxImage(-1);
+        }
+      });
+
+      // -------------------- 4. INTERACTIVE SETLIST FILTERING --------------------
+      const setlistData = [
+        {
+          title: "Paranoid",
+          artist: "Black Sabbath",
+          era: "70s-80s",
+          eraLabel: "70s/80s Classic",
+          favorite: true,
+        },
+
+        {
+          title: "Black Hole Sun",
+          artist: "Soundgarden",
+          era: "90s",
+          eraLabel: "90s Grunge & Alt",
+          favorite: false,
+        },
+
+        {
+          title: "Seven Nation Army",
+          artist: "The White Stripes",
+          era: "2000s",
+          eraLabel: "2000s+ Anthems",
+          favorite: false,
+        },
+        {
+          title: "Sex on Fire",
+          artist: "Kings of Leon",
+          era: "2000s",
+          eraLabel: "2000s+ Anthems",
+          favorite: false,
+        },
+      ];
+
+      let selectedEra = "all";
+      let searchQuery = "";
+
+      const setlistGrid = document.getElementById("setlist-grid");
+      const setlistEmpty = document.getElementById("setlist-empty");
+      const songCount = document.getElementById("song-count");
+      const eraBtns = document.querySelectorAll(".era-btn");
+      const searchInput = document.getElementById("setlist-search");
+
+      function renderSetlist() {
+        const filtered = setlistData.filter((song) => {
+          const matchesEra = selectedEra === "all" || song.era === selectedEra;
+          const q = searchQuery.toLowerCase().trim();
+          const matchesSearch =
+            song.title.toLowerCase().includes(q) || song.artist.toLowerCase().includes(q);
+          return matchesEra && matchesSearch;
         });
 
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuIcon.className = 'fa-solid fa-bars text-2xl';
-            });
-        });
+        songCount.textContent = `Showing ${filtered.length} track${filtered.length === 1 ? "" : "s"}`;
 
-        // -------------------- 3. PHOTO GALLERY LIGHTBOX --------------------
-        const galleryPhotos = [
-            {
-                src: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1400&q=85',
-                title: 'Face-Melting Solos',
-                caption: 'Portsmouth Guildhall • Captured Live'
-            },
-            {
-                src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1400&q=85',
-                title: 'Commanding the Crowd',
-                caption: 'Southsea Live • Main Stage'
-            },
-            {
-                src: 'https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1400&q=85',
-                title: 'Hands in the Air',
-                caption: 'Portsmouth Guildhall Showcase • Sold Out'
-            },
-            {
-                src: 'https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=1400&q=85',
-                title: 'Thunderous Rhythm Section',
-                caption: 'Southsea Live Sessions'
-            }
-        ];
-
-        let currentPhotoIndex = 0;
-
-        function openLightbox(index) {
-            currentPhotoIndex = index;
-            updateLightboxContent();
-            document.getElementById('lightbox-modal').classList.remove('hidden');
+        if (filtered.length === 0) {
+          setlistGrid.innerHTML = "";
+          setlistEmpty.classList.remove("hidden");
+          return;
         }
 
-        function closeLightbox() {
-            document.getElementById('lightbox-modal').classList.add('hidden');
-        }
-
-        function changeLightboxImage(direction) {
-            currentPhotoIndex = (currentPhotoIndex + direction + galleryPhotos.length) % galleryPhotos.length;
-            updateLightboxContent();
-        }
-
-        function updateLightboxContent() {
-            const photo = galleryPhotos[currentPhotoIndex];
-            document.getElementById('lightbox-img').src = photo.src;
-            document.getElementById('lightbox-title').textContent = photo.title;
-            document.getElementById('lightbox-caption').textContent = photo.caption;
-        }
-
-        // Keyboard support for modals (Escape, Left/Right arrows)
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                closeLightbox();
-                closeVideoModal();
-                closeRsvpModal();
-            } else if (!document.getElementById('lightbox-modal').classList.contains('hidden')) {
-                if (e.key === 'ArrowRight') changeLightboxImage(1);
-                if (e.key === 'ArrowLeft') changeLightboxImage(-1);
-            }
-        });
-
-        // -------------------- 4. INTERACTIVE SETLIST FILTERING --------------------
-        const setlistData = [
-            { title: 'Paranoid', artist: 'Black Sabbath', era: '70s-80s', eraLabel: '70s/80s Classic', favorite: true },
-
-            { title: 'Black Hole Sun', artist: 'Soundgarden', era: '90s', eraLabel: '90s Grunge & Alt', favorite: false },
-
-            { title: 'Seven Nation Army', artist: 'The White Stripes', era: '2000s', eraLabel: '2000s+ Anthems', favorite: false },
-            { title: 'Sex on Fire', artist: 'Kings of Leon', era: '2000s', eraLabel: '2000s+ Anthems', favorite: false }
-        ];
-
-        let selectedEra = 'all';
-        let searchQuery = '';
-
-        const setlistGrid = document.getElementById('setlist-grid');
-        const setlistEmpty = document.getElementById('setlist-empty');
-        const songCount = document.getElementById('song-count');
-        const eraBtns = document.querySelectorAll('.era-btn');
-        const searchInput = document.getElementById('setlist-search');
-
-        function renderSetlist() {
-            const filtered = setlistData.filter(song => {
-                const matchesEra = selectedEra === 'all' || song.era === selectedEra;
-                const q = searchQuery.toLowerCase().trim();
-                const matchesSearch = song.title.toLowerCase().includes(q) || song.artist.toLowerCase().includes(q);
-                return matchesEra && matchesSearch;
-            });
-
-            songCount.textContent = `Showing ${filtered.length} track${filtered.length === 1 ? '' : 's'}`;
-
-            if (filtered.length === 0) {
-                setlistGrid.innerHTML = '';
-                setlistEmpty.classList.remove('hidden');
-                return;
-            }
-
-            setlistEmpty.classList.add('hidden');
-            setlistGrid.innerHTML = filtered.map(song => `
+        setlistEmpty.classList.add("hidden");
+        setlistGrid.innerHTML = filtered
+          .map(
+            (song) => `
                 <div class="p-4 rounded-xl bg-rock-card border border-rock-text/15 hover:border-rock-text/35 transition-all flex items-center justify-between gap-3 group">
                     <div class="min-w-0">
                         <div class="flex items-center gap-2">
                             <h4 class="font-bold text-rock-text text-base truncate group-hover:text-rock-amber transition-colors">${song.title}</h4>
-                            ${song.favorite ? '<i class="fa-solid fa-fire text-rock-red text-xs flex-shrink-0" title="Crowd Favorite"></i>' : ''}
+                            ${song.favorite ? '<i class="fa-solid fa-fire text-rock-red text-xs flex-shrink-0" title="Crowd Favorite"></i>' : ""}
                         </div>
                         <p class="text-sm text-rock-muted truncate">${song.artist}</p>
                     </div>
@@ -767,78 +1215,80 @@
                         ${song.eraLabel}
                     </span>
                 </div>
-            `).join('');
-        }
+            `
+          )
+          .join("");
+      }
 
-        eraBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                selectedEra = btn.getAttribute('data-era');
-                eraBtns.forEach(b => {
-                    b.classList.remove('bg-rock-red', 'text-white', 'shadow-neon-red');
-                    b.classList.add('bg-rock-deep', 'text-rock-text/90');
-                });
-                btn.classList.remove('bg-rock-deep', 'text-rock-text/90');
-                btn.classList.add('bg-rock-red', 'text-white', 'shadow-neon-red');
-                renderSetlist();
-            });
+      eraBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          selectedEra = btn.getAttribute("data-era");
+          eraBtns.forEach((b) => {
+            b.classList.remove("bg-rock-red", "text-white", "shadow-neon-red");
+            b.classList.add("bg-rock-deep", "text-rock-text/90");
+          });
+          btn.classList.remove("bg-rock-deep", "text-rock-text/90");
+          btn.classList.add("bg-rock-red", "text-white", "shadow-neon-red");
+          renderSetlist();
         });
+      });
 
-        searchInput.addEventListener('input', (e) => {
-            searchQuery = e.target.value;
-            renderSetlist();
-        });
-
-        function resetSetlistFilters() {
-            selectedEra = 'all';
-            searchQuery = '';
-            searchInput.value = '';
-            eraBtns[0].click();
-        }
-
-        // Initial render
+      searchInput.addEventListener("input", (e) => {
+        searchQuery = e.target.value;
         renderSetlist();
+      });
 
-        // -------------------- 5. GIG RSVP MODAL --------------------
-        function openRsvpModal(showTitle) {
-            document.getElementById('rsvp-show-title').textContent = showTitle;
-            document.getElementById('rsvp-success').classList.add('hidden');
-            document.getElementById('rsvp-form').classList.remove('hidden');
-            document.getElementById('rsvp-modal').classList.remove('hidden');
-        }
+      function resetSetlistFilters() {
+        selectedEra = "all";
+        searchQuery = "";
+        searchInput.value = "";
+        eraBtns[0].click();
+      }
 
-        function closeRsvpModal() {
-            document.getElementById('rsvp-modal').classList.add('hidden');
-        }
+      // Initial render
+      renderSetlist();
 
-        document.getElementById('rsvp-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            document.getElementById('rsvp-form').classList.add('hidden');
-            document.getElementById('rsvp-success').classList.remove('hidden');
-            document.getElementById('rsvp-email').value = '';
-        });
+      // -------------------- 5. GIG RSVP MODAL --------------------
+      function openRsvpModal(showTitle) {
+        document.getElementById("rsvp-show-title").textContent = showTitle;
+        document.getElementById("rsvp-success").classList.add("hidden");
+        document.getElementById("rsvp-form").classList.remove("hidden");
+        document.getElementById("rsvp-modal").classList.remove("hidden");
+      }
 
-        // -------------------- 6. BOOKING INQUIRY FORM FEEDBACK --------------------
-        const bookingForm = document.getElementById('booking-form');
-        const formFeedback = document.getElementById('form-feedback');
-        const feedbackDetails = document.getElementById('feedback-details');
+      function closeRsvpModal() {
+        document.getElementById("rsvp-modal").classList.add("hidden");
+      }
 
-        bookingForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const date = document.getElementById('event-date').value;
-            const venue = document.getElementById('venue').value;
-            const type = document.getElementById('event-type').value;
+      document.getElementById("rsvp-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        document.getElementById("rsvp-form").classList.add("hidden");
+        document.getElementById("rsvp-success").classList.remove("hidden");
+        document.getElementById("rsvp-email").value = "";
+      });
 
-            feedbackDetails.textContent = `Thanks ${name}! Polarity is checking availability for your ${type} at ${venue} on ${date} and will reply within 24 hours.`;
-            bookingForm.classList.add('hidden');
-            formFeedback.classList.remove('hidden');
-        });
+      // -------------------- 6. BOOKING INQUIRY FORM FEEDBACK --------------------
+      const bookingForm = document.getElementById("booking-form");
+      const formFeedback = document.getElementById("form-feedback");
+      const feedbackDetails = document.getElementById("feedback-details");
 
-        function resetBookingForm() {
-            bookingForm.reset();
-            formFeedback.classList.add('hidden');
-            bookingForm.classList.remove('hidden');
-        }
+      bookingForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("name").value;
+        const date = document.getElementById("event-date").value;
+        const venue = document.getElementById("venue").value;
+        const type = document.getElementById("event-type").value;
+
+        feedbackDetails.textContent = `Thanks ${name}! Polarity is checking availability for your ${type} at ${venue} on ${date} and will reply within 24 hours.`;
+        bookingForm.classList.add("hidden");
+        formFeedback.classList.remove("hidden");
+      });
+
+      function resetBookingForm() {
+        bookingForm.reset();
+        formFeedback.classList.add("hidden");
+        bookingForm.classList.remove("hidden");
+      }
     </script>
-</body>
+  </body>
 </html>
